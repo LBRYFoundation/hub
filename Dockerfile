@@ -21,6 +21,7 @@ RUN apt-get update && \
       python3.9-dev \
       python3-cffi \
       python3-pip \
+      curl \
       zstd && \
     update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1 && \
     rm -rf /var/lib/apt/lists/*
